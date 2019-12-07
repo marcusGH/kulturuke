@@ -9,6 +9,8 @@ perms = permutations(string)
 
 #join them into a list of permutations
 permList = [''.join(p) for p in perms]
+#remove duplicates
+permList = list(dict.fromkeys(permList))
 
 #shuffle them to create a better reading experience
 #we want the first element in the original position
